@@ -1,0 +1,116 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 100vw;
+}
+
+.card {
+  width: 26em;
+  height: 650px;
+  padding: 4em 3em;
+}
+
+.card:nth-child(1) {
+  background-color: #e38826;
+  border-radius: 0.5em 0 0 0.5em;
+}
+.card:nth-child(1) > button {
+  color: #e38826;
+}
+
+.card:nth-child(2) {
+  background-color: #006970;
+}
+.card:nth-child(2) > button {
+  color: #006970;
+}
+.card:nth-child(3) {
+  background-color: #004241;
+  border-radius: 0 0.5em 0.5em 0;
+}
+.card:nth-child(3) > button {
+  color: #004241;
+}
+
+.card:nth-child(3) > p {
+  margin-bottom: 4.30em;
+}
+
+.card > img {
+  align-items: center;
+}
+
+.card > h1 {
+  margin-top: 1.5em;
+  font-size: 50px;
+  font-family: "Big Shoulders Display", cursive;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.card > p {
+  font-size: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  color: #fff;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+
+.card > button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  padding: 1em 2em;
+  border-radius: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card > button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    width: 100vw;
+    margin: 0 12em;
+  }
+  .cards {
+    margin: 100em auto 8em;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90vw;
+    margin: 0 15em;
+  }
+
+  .card:nth-child(1) {
+    background-color: #e38826;
+    border-radius: 0.5em 0.5em 0 0em;
+  }
+  .card:nth-child(3) {
+    background-color: #004241;
+    border-radius: 0 0 0.5em 0.5em;
+  }
+  .card:nth-child(3) > p {
+    margin-bottom: 3em;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1250px) {
+  .cards {
+    margin-top: 10em;
+    width: 94vw;
+  }
+
+  .card:nth-child(3) > p {
+    margin-bottom: 3em;
+  }
+}
