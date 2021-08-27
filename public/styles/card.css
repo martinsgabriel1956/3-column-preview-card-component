@@ -11,6 +11,7 @@
   width: 26em;
   height: 650px;
   padding: 4em 3em;
+  position: relative;
 }
 
 .card:nth-child(1) {
@@ -44,11 +45,12 @@
 }
 
 .card > h1 {
-  margin-top: 1.5em;
+  margin-top: 1.25em;
   font-size: 50px;
   font-family: "Big Shoulders Display", cursive;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: .75em;
 }
 
 .card > p {
@@ -62,13 +64,17 @@
 .card > button {
   background-color: #fff;
   border: 2px solid #fff;
-  padding: 1em 2em;
+  padding: 1em 2.75em;
   border-radius: 1.5em;
   font-size: 1em;
   font-weight: bold;
   font-family: "Lexend Deca", sans-serif;
   cursor: pointer;
   transition: all 0.5s;
+
+
+  top: 0;
+  
 }
 
 .card > button:hover {
